@@ -1,0 +1,30 @@
+{
+  "name": "api_hapi",
+  "version": "1.0.0",
+  "description": "api using hapi mongodb graphql swagger",
+  "main": "index.js",
+  "scripts": {
+    "test": "testing"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GRamirez2/api_hapi.git"
+  },
+  "keywords": [
+    "hapi",
+    "api",
+    "swagger",
+    "graphql",
+    "mongodb"
+  ],
+  "author": "George Ramirez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GRamirez2/api_hapi/issues"
+  },
+  "homepage": "https://github.com/GRamirez2/api_hapi#readme",
+  "dependencies": {
+    "hapi": "^17.5.3",
+    "nodemon": "^1.18.3"
+  }
+}
