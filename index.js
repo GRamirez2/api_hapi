@@ -35,12 +35,12 @@ const init = async () => {
         path: '/api/v1/ridemarfa/drivers',
         handler: (request, reply) => {
 
-          const { name, phone, email, email2, vehicle, address, city, state, zip } = request.payload;
+          const { first, last, phone, email, email2, vehicle, address, city, state, zip, jobs, reviews } = request.payload;
 
           const driver = new Driver({
-            name, phone, email, email2, vehicle, address, city, state, zip
+            first, last, phone, email, email2, vehicle, address, city, state, zip, jobs, reviews
           });
-          console.log('driver', driver)
+          //console.log('driver', driver)
           return driver.save();
 
         }

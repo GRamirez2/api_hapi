@@ -2,7 +2,8 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const driverSchema = new Schema({
-  name: String,
+  first: String,
+  last: String,
   phone: String,
   email: String,
   email2: String,
@@ -10,7 +11,9 @@ const driverSchema = new Schema({
   address: String,
   city: String,
   state: String,
-  zip: Number
+  zip: Number,
+  jobs: Number,
+  reviews: [String]
 })
 
 module.exports = mongoose.model('Driver', driverSchema);
